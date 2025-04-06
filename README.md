@@ -77,6 +77,8 @@ This repository contains the Terraform configuration for setting up the complete
 - React Router
 - CSS Modules
 - Axios for API requests
+- TailwindCSS for styling
+- ESLint for code quality
 
 ## 🤝 Contributing
 
