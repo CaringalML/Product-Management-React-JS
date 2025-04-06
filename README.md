@@ -1,12 +1,93 @@
-# React + Vite
+# 🚀 Product Management React + Vite Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern product management application built with React and Vite.
 
-Currently, two official plugins are available:
+![Product Management App](2025.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Fast product browsing and search
+- Product category filtering
+- Responsive design for all devices
+- Admin dashboard for product management
+- CRUD dashboard for product management
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Quick Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/CaringalML/Product-Management-React-JS.git
+
+# Navigate to the project directory
+cd Product-Management-React-JS
+
+# Install dependencies
+npm ci
+
+# Start the development server
+npm run dev
+```
+
+Visit `http://localhost:3000` to see the application running.
+
+## 📦 Build for Production
+
+```bash
+# Create optimized production build
+npm run build
+
+# Preview the production build locally
+npm run preview
+```
+
+The build output will be in the `dist` directory, ready to be deployed.
+
+## 🔧 Environment Configuration
+
+Create a `.env` file in the root directory:
+
+```
+VITE_API_BASE_URL=http://localhost/api
+```
+
+For production, update the URL to your actual API endpoint.
+
+## 🚢 Deployment
+
+This application is designed to work with the CloudStruct infrastructure.
+
+For manual deployment:
+```bash
+aws s3 sync ./dist s3://caringalfrontend/frontend-build --delete
+```
+
+Or use the GitHub Actions workflow as described in the CloudStruct infrastructure README.
+
+## 🏗️ Infrastructure Repository
+
+The infrastructure code for deploying this application using AWS CloudFront and S3 is available at:
+https://github.com/CaringalML/CloudStruct-A-Frontend-Infrastructure-with-AWS-CloudFront-and-S3.git
+
+This repository contains the Terraform configuration for setting up the complete serverless infrastructure needed to host this application.
+
+## 📚 Tech Stack
+
+- React 18
+- Vite
+- React Router
+- CSS Modules
+- Axios for API requests
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+## 📄 License
+
+This project is open-sourced under the MIT License.
+
+## 👨‍💻 Author
+
+Martin Caringal
